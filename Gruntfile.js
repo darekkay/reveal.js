@@ -74,11 +74,12 @@ module.exports = function(grunt) {
 				compatibility: 'ie9'
 			},
 			compress: {
-				files: {
-					'css/reveal.min.css': [ 'css/reveal.css' ],
-					'css/theme/dk-dark.min.css': [ 'css/theme/dk-dark.css' ],
-					'css/theme/dk-light.min.css': [ 'css/theme/dk-light.css' ],
-				}
+        files: {
+          'css/reveal.min.css': ['css/reveal.css'],
+          'css/theme/dk-dark.min.css': ['css/theme/dk-dark.css'],
+          'css/theme/dk-light.min.css': ['css/theme/dk-light.css'],
+        }
+      }
 		},
 
 		jshint: {

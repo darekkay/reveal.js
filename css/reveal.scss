@@ -503,12 +503,16 @@ $controlsArrowAngleActive: 36deg;
 
   .reveal .controls .switch-theme {
     position: absolute;
-    left: 45px;
-    top: 45px;
+    bottom: 4.15em;
+    right: 4.15em;
     width: 18px;
     height: 18px;
 
-    border-radius: 100%;
+    border-radius: 3px;
+		transform: rotate(45deg);
+    z-index: 2;
+		pointer-events: auto;
+		cursor: pointer;
 
     &.light {
       background-color: #b5b5b5;
