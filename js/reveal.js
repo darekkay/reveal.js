@@ -4764,11 +4764,11 @@
 	function onSwitchThemeClicked( event ) {
 		if(event.target.classList.contains("dark")) {
 			event.target.classList.replace("dark", "light");
-      document.getElementById('theme').setAttribute('href','css/theme/dk-light.css');
+      document.getElementById('theme').setAttribute('href','css/theme/dk-light.min.css');
 		}
 		else {
 			event.target.classList.replace("light", "dark");
-      document.getElementById('theme').setAttribute('href','css/theme/dk-dark.css');
+      document.getElementById('theme').setAttribute('href','css/theme/dk-dark.min.css');
 		}
 	}
 

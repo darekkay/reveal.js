@@ -40,12 +40,12 @@ module.exports = function(grunt) {
 				dest: 'css/reveal.css'
 			},
 			themes: {
-				expand: true,
-				cwd: 'css/theme/source',
-				src: ['*.sass', '*.scss'],
-				dest: 'css/theme',
-				ext: '.css'
-			}
+						expand: true,
+						cwd: 'css/theme/source',
+						src: ['*.sass', '*.scss'],
+						dest: 'css/theme',
+						ext: '.css'
+					}
 		},
 
 		autoprefixer: {
@@ -54,14 +54,31 @@ module.exports = function(grunt) {
 			}
 		},
 
+    clean: {
+      folder: ['build/'],
+    },
+
+    copy: {
+      main: {
+        files: [
+          {src: ['js/*.min.js'], dest: 'build/', expand: true},
+          {src: ['css/reveal.min.css'], dest: 'build/', expand: true},
+          {src: ['css/theme/*.min.css'], dest: 'build/', expand: true},
+          {src: ['plugin/highlight/*.js', 'plugin/notes/*.js'], dest: 'build/', expand: true},
+        ],
+      },
+    },
+
 		cssmin: {
 			options: {
 				compatibility: 'ie9'
 			},
 			compress: {
-				src: 'css/reveal.css',
-				dest: 'css/reveal.min.css'
-			}
+				files: {
+					'css/reveal.min.css': [ 'css/reveal.css' ],
+					'css/theme/dk-dark.min.css': [ 'css/theme/dk-dark.css' ],
+					'css/theme/dk-light.min.css': [ 'css/theme/dk-light.css' ],
+				}
 		},
 
 		jshint: {
@@ -99,19 +116,19 @@ module.exports = function(grunt) {
 					open: true,
 					useAvailablePort: true
 				}
-			}
-		},
+				}
+			},
 
 		zip: {
 			bundle: {
 				src: [
-					'index.html',
-					'css/**',
-					'js/**',
-					'lib/**',
-					'images/**',
-					'plugin/**',
-					'**.md'
+				'index.html',
+				'css/**',
+				'js/**',
+				'lib/**',
+				'images/**',
+				'plugin/**',
+				'**.md'
 				],
 				dest: 'reveal-js-presentation.zip'
 			}
@@ -147,13 +164,15 @@ module.exports = function(grunt) {
 		},
 
 		retire: {
-			js: [ 'js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js' ],
+			js: ['js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js'],
 			node: [ '.' ]
 		}
 
 	});
 
 	// Dependencies
+    grunt.loadNpmTasks( 'grunt-contrib-clean' );
+    grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
@@ -164,12 +183,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-retire' );
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-	
+
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
 	// JS task
-	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
+	grunt.registerTask( 'js', [ 'jshint', 'uglify' ] );
 
 	// Theme CSS
 	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );
@@ -189,4 +208,6 @@ module.exports = function(grunt) {
 	// Run tests
 	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
 
+	// Build production bundle
+  grunt.registerTask( 'build', [ 'default', 'clean', 'copy' ] );
 };
