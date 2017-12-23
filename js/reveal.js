@@ -117,9 +117,9 @@
 			showNotes: false,
 
 			// Global override for autolaying embedded media (video/audio/iframe)
-			// - null:   Media will only autoplay if data-autoplay is present
-			// - true:   All media will autoplay, regardless of individual setting
-			// - false:  No media will autoplay, regardless of individual setting
+			// - null: Media will only autoplay if data-autoplay is present
+			// - true: All media will autoplay, regardless of individual setting
+			// - false: No media will autoplay, regardless of individual setting
 			autoPlayMedia: null,
 
 			// Controls automatic progression to the next slide
@@ -551,7 +551,9 @@
 			'<button class="navigate-left" aria-label="previous slide"><div class="controls-arrow"></div></button>' +
 			'<button class="navigate-right" aria-label="next slide"><div class="controls-arrow"></div></button>' +
 			'<button class="navigate-up" aria-label="above slide"><div class="controls-arrow"></div></button>' +
-			'<button class="navigate-down" aria-label="below slide"><div class="controls-arrow"></div></button>' );
+			'<button class="navigate-down" aria-label="below slide"><div class="controls-arrow"></div></button>',
+			'<div role="button" class="switch-theme dark" aria-label="switch theme"></div>'
+        );
 
 		// Slide number
 		dom.slideNumber = createSingletonNode( dom.wrapper, 'div', 'slide-number', '' );
@@ -574,6 +576,7 @@
 		dom.controlsPrev = toArray( document.querySelectorAll( '.navigate-prev' ) );
 		dom.controlsNext = toArray( document.querySelectorAll( '.navigate-next' ) );
 
+		dom.switchTheme = toArray( document.querySelectorAll('.switch-theme') );
 		// The right and down arrows in the standard reveal.js controls
 		dom.controlsRightArrow = dom.controls.querySelector( '.navigate-right' );
 		dom.controlsDownArrow = dom.controls.querySelector( '.navigate-down' );
@@ -1213,6 +1216,7 @@
 			dom.controlsDown.forEach( function( el ) { el.addEventListener( eventName, onNavigateDownClicked, false ); } );
 			dom.controlsPrev.forEach( function( el ) { el.addEventListener( eventName, onNavigatePrevClicked, false ); } );
 			dom.controlsNext.forEach( function( el ) { el.addEventListener( eventName, onNavigateNextClicked, false ); } );
+			dom.switchTheme.forEach( function( el ) { el.addEventListener( eventName, onSwitchThemeClicked, false ); } );
 		} );
 
 	}
@@ -1257,6 +1261,7 @@
 			dom.controlsDown.forEach( function( el ) { el.removeEventListener( eventName, onNavigateDownClicked, false ); } );
 			dom.controlsPrev.forEach( function( el ) { el.removeEventListener( eventName, onNavigatePrevClicked, false ); } );
 			dom.controlsNext.forEach( function( el ) { el.removeEventListener( eventName, onNavigateNextClicked, false ); } );
+			dom.switchTheme.forEach( function( el ) { el.removeEventListener( eventName, onSwitchThemeClicked, false ); } );
 		} );
 
 	}
@@ -2777,15 +2782,15 @@
 			// Flag if there are ANY vertical slides, anywhere in the deck
 			if( dom.wrapper.querySelectorAll( '.slides>section>section' ).length ) {
 				dom.wrapper.classList.add( 'has-vertical-slides' );
-			}
+						}
 			else {
 				dom.wrapper.classList.remove( 'has-vertical-slides' );
-			}
+					}
 
 			// Flag if there are ANY horizontal slides, anywhere in the deck
 			if( dom.wrapper.querySelectorAll( '.slides>section' ).length > 1 ) {
 				dom.wrapper.classList.add( 'has-horizontal-slides' );
-			}
+				}
 			else {
 				dom.wrapper.classList.remove( 'has-horizontal-slides' );
 			}
@@ -3570,13 +3575,13 @@
 
 			if( options.unloadIframes === true ) {
 				// Unload lazy-loaded iframes
-				toArray( element.querySelectorAll( 'iframe[data-src]' ) ).forEach( function( el ) {
-					// Only removing the src doesn't actually unload the frame
-					// in all browsers (Firefox) so we set it to blank first
-					el.setAttribute( 'src', 'about:blank' );
-					el.removeAttribute( 'src' );
-				} );
-			}
+			toArray( element.querySelectorAll( 'iframe[data-src]' ) ).forEach( function( el ) {
+				// Only removing the src doesn't actually unload the frame
+				// in all browsers (Firefox) so we set it to blank first
+				el.setAttribute( 'src', 'about:blank' );
+				el.removeAttribute( 'src' );
+			} );
+		}
 		}
 
 	}
@@ -3864,14 +3869,14 @@
 	 */
 	function getSlideBackground( x, y ) {
 
-		var slide = getSlide( x, y );
-		if( slide ) {
-			return slide.slideBackgroundElement;
+			var slide = getSlide( x, y );
+			if( slide ) {
+				return slide.slideBackgroundElement;
+			}
+
+			return undefined;
+
 		}
-
-		return undefined;
-
-	}
 
 	/**
 	 * Retrieves the speaker notes from a slide. Notes can be
@@ -4755,6 +4760,17 @@
 	function onNavigateDownClicked( event ) { event.preventDefault(); onUserInput(); navigateDown(); }
 	function onNavigatePrevClicked( event ) { event.preventDefault(); onUserInput(); navigatePrev(); }
 	function onNavigateNextClicked( event ) { event.preventDefault(); onUserInput(); navigateNext(); }
+
+	function onSwitchThemeClicked( event ) {
+		if(event.target.classList.contains("dark")) {
+			event.target.classList.replace("dark", "light");
+      document.getElementById('theme').setAttribute('href','css/theme/dk-light.css');
+		}
+		else {
+			event.target.classList.replace("light", "dark");
+      document.getElementById('theme').setAttribute('href','css/theme/dk-dark.css');
+		}
+	}
 
 	/**
 	 * Handler for the window level 'hashchange' event.
