@@ -1738,81 +1738,78 @@ $controlsArrowAngleActive: 36deg;
 }
 
 
-/*
-Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
-based on dark.css by Ivan Sagalaev
-*/
+/* DK Tomorrow Syntax Highlighting */
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #3f3f3f;
-  color: #dcdcdc;
+  background: #1c1c1c;
+  color: #ffffff;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-tag {
-  color: #e3ceab;
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #969896;
 }
 
-.hljs-template-tag {
-  color: #dcdcdc;
-}
-
-.hljs-number {
-  color: #8cd0d3;
-}
-
+/* Tomorrow Red */
 .hljs-variable,
 .hljs-template-variable,
-.hljs-attribute {
-  color: #efdcbc;
-}
-
-.hljs-literal {
-  color: #efefaf;
-}
-
-.hljs-subst {
-  color: #8f8f8f;
-}
-
-.hljs-title,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class,
-.hljs-section,
-.hljs-type {
-  color: #efef8f;
+.hljs-regexp,
+.hljs-deletion {
+	color: #e04164;
 }
 
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link,
+.hljs-setting {
+	color: #e78c45;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #e7c547;
+}
+
+/* Tomorrow Green */
+.hljs-string,
 .hljs-symbol,
 .hljs-bullet,
-.hljs-link {
-  color: #dca3a3;
-}
-
-.hljs-deletion,
-.hljs-string,
-.hljs-built_in,
-.hljs-builtin-name {
-  color: #cc9393;
-}
-
 .hljs-addition,
-.hljs-comment,
-.hljs-quote,
-.hljs-meta {
-  color: #7f9f7f;
+.hljs-value {
+	color: #b9ca4a;
 }
 
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section,
+.hljs-tag {
+	color: #7aa6da;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #c397d8;
+}
 
 .hljs-emphasis {
-  font-style: italic;
+	font-style: italic;
 }
 
 .hljs-strong {
-  font-weight: bold;
+	font-weight: bold;
 }
