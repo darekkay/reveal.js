@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * reveal.js
  * http://revealjs.com
@@ -1571,15 +1572,33 @@ body {
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
 
-/*
-Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
-based on dark.css by Ivan Sagalaev
-*/
+/*********************************************
+ * SYNTAX HIGHLIGHTING
+ *********************************************/
+/* DK Tomorrow Syntax Highlighting */
+pre::before {
+  background-color: #d8d8da;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #8c95a6;
+  content: "•••";
+  display: block;
+  font-size: 1em;
+  line-height: 1;
+  text-indent: .5em;
+  width: 100%; }
+
+pre code {
+  background-color: #282c34;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  max-height: 600px;
+  padding: 10px 15px; }
+
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #1c1c1c;
   color: #ffffff; }
 
 /* Tomorrow Comment */

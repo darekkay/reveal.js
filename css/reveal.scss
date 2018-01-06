@@ -1737,17 +1737,44 @@ $controlsArrowAngleActive: 36deg;
 	visibility: hidden;
 }
 
+/*********************************************
+ * SYNTAX HIGHLIGHTING
+ *********************************************/
 
 /* DK Tomorrow Syntax Highlighting */
+
+$coal: hsl(220deg, 13%, 10%);
+
+pre {
+
+	&::before {
+		background-color: desaturate(lighten($coal, 75%), 10%);
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		color: lighten($coal, 50%);
+		content: "•••";
+		display: block;
+		font-size: 1em;
+		line-height: 1;
+		text-indent: .5em;
+		width: 100%;
+	}
+
+	code {
+		background-color: lighten($coal, 8%);
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		max-height: 600px;
+		padding: 10px 15px;
+	}
+}
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #1c1c1c;
   color: #ffffff;
 }
-
 
 /* Tomorrow Comment */
 .hljs-comment,

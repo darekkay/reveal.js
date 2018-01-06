@@ -15,16 +15,18 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
+//$backgroundColor: #111;
+$backgroundColor: #14355C;
 
-$mainFont: 'Open Sans', sans-serif;
-$linkColor: #e7ad52;
+$mainFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+//$linkColor: #e7ad52;
+$linkColor: #ff8300;
 $linkColorHover: lighten( $linkColor, 20% );
-$headingFont: 'Montserrat', Impact, sans-serif;
+$headingFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
-$selectionBackgroundColor: #e7ad52;
+$selectionBackgroundColor: #e2901c;
 
 
 // Theme template ------------------------------
