@@ -1,75 +1,74 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Template</title>
+    <title>Template</title>
 
-		<meta name="description" content="">
-		<meta name="author" content="Dariusz Krolikowski">
+    <meta name="description" content="">
+    <meta name="author" content="Dariusz Krolikowski">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/dk-dark.min.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/dk-dark.min.css" id="theme">
 
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.min.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Title</h1>
-					<h3>Subtitle</h3>
-					<p>
-						<small>Created by <a href="https://darekkay.com">Dariusz Krolikowski</a></small>
-					</p>
-				</section>
+      <div class="slides">
+        <section>
+          <h1>Title</h1>
+          <h3>Subtitle</h3>
+          <p>
+            <small>Created by <a href="https://darekkay.com">Dariusz Krolikowski</a></small>
+          </p>
+        </section>
 
-				<section>
-					<h2></h2>
-					<p><a href="https://darekkay.com">darekkay.com</a></p
-					<p><a href="https://github.com/darekkay/presentations">github.com/darekkay/presentations</a></p>
-				</section>
+        <section>
+          <h2></h2>
+          <p><a href="https://darekkay.com">darekkay.com</a></p
+          <p><a href="https://github.com/darekkay/presentations">github.com/darekkay/presentations</a></p>
+        </section>
 
-			</div>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
         controlsTutorial: false,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'none', // none/fade/slide/convex/concave/zoom
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'js/classList.min.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'js/classList.min.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
