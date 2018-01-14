@@ -1573,6 +1573,15 @@ body {
   visibility: hidden; }
 
 /*********************************************
+ * UTILITIES
+ *********************************************/
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+/*********************************************
  * SYNTAX HIGHLIGHTING
  *********************************************/
 /* DK Tomorrow Syntax Highlighting */
