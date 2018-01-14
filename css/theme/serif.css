@@ -136,6 +136,10 @@ body {
 .reveal blockquote p:last-child {
   display: inline-block; }
 
+.reveal mark {
+  background-color: inherit;
+  color: #51483D; }
+
 .reveal q {
   font-style: italic; }
 

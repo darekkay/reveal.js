@@ -150,6 +150,10 @@ body {
 		display: inline-block;
 	}
 
+.reveal mark {
+	background-color: inherit;
+	color: $linkColor;
+}
 .reveal q {
 	font-style: italic;
 }
