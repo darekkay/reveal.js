@@ -30,3 +30,8 @@ $selectionBackgroundColor: #e2901c;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
