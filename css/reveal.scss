@@ -1737,12 +1737,16 @@ $controlsArrowAngleActive: 36deg;
 	visibility: hidden;
 }
 
+
 /*********************************************
  * UTILITIES
  *********************************************/
 
-.float-right { float: right; }
-.float-left { float: left; }
+.float-right { float: right !important; }
+.float-left { float: left !important; }
+.text-center { text-align: center !important; }
+.no-border { border: none !important; }
+
 
 /*********************************************
  * SYNTAX HIGHLIGHTING
