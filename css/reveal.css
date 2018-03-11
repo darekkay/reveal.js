@@ -522,7 +522,7 @@ body {
   display: none;
   position: absolute;
   width: 100%;
-  padding: 20px 0px;
+  padding: 10px 0px;
   pointer-events: auto;
   z-index: 10;
   -webkit-transform-style: flat;
@@ -1583,6 +1583,9 @@ body {
 
 .text-center {
   text-align: center !important; }
+
+.text-nowrap {
+  white-space: nowrap !important; }
 
 .no-border {
   border: none !important; }

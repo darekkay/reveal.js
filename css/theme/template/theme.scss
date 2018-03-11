@@ -137,7 +137,6 @@ body {
 .reveal blockquote {
 	display: block;
 	position: relative;
-	width: 70%;
 	margin: $blockMargin auto;
 	padding: 5px;
 
@@ -152,7 +151,6 @@ body {
 
 .reveal mark {
 	background-color: inherit;
-	color: $linkColor;
 }
 .reveal q {
 	font-style: italic;
@@ -264,7 +262,6 @@ body {
 
 .reveal section img {
 	margin: 15px 0px;
-	background: rgba(255,255,255,0.12);
 	border: 4px solid $mainColor;
 
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);

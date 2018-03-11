@@ -627,7 +627,7 @@ $controlsArrowAngleActive: 36deg;
 	display: none;
 	position: absolute;
 	width: 100%;
-	padding: 20px 0px;
+	padding: 10px 0px;
 	pointer-events: auto;
 
 	z-index: 10;
@@ -1745,6 +1745,7 @@ $controlsArrowAngleActive: 36deg;
 .float-right { float: right !important; }
 .float-left { float: left !important; }
 .text-center { text-align: center !important; }
+.text-nowrap {white-space: nowrap !important; }
 .no-border { border: none !important; }
 
 

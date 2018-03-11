@@ -15,18 +15,18 @@ body {
 
 .reveal {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: normal;
   color: #222; }
 
 ::selection {
   color: #fff;
-  background: #98bdef;
+  background: #89edf6;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #98bdef;
+  background: #89edf6;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -54,16 +54,16 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 3.14em; }
 
 .reveal h2 {
-  font-size: 1.9em; }
+  font-size: 1.76em; }
 
 .reveal h3 {
-  font-size: 1.5em; }
+  font-size: 1.26em; }
 
 .reveal h4 {
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 .reveal h1 {
   text-shadow: none; }
@@ -124,7 +124,6 @@ body {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
@@ -136,8 +135,7 @@ body {
   display: inline-block; }
 
 .reveal mark {
-  background-color: inherit;
-  color: #2a76dd; }
+  background-color: inherit; }
 
 .reveal q {
   font-style: italic; }
@@ -226,7 +224,6 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
   border: 4px solid #222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
@@ -272,6 +269,19 @@ body {
 .bg-highlight {
   background: #ddd; }
 
+.highlight-1, mark {
+  color: #f76707; }
+
+.highlight-2 {
+  color: #1fb714; }
+
+.highlight-3 {
+  color: #fb2608; }
+
+.highlight-4 {
+  color: #a36ac7; }
+
+/*  */
 .reveal section img {
   border: none;
   box-shadow: none; }
