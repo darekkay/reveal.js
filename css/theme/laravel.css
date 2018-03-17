@@ -51,16 +51,16 @@ body {
   text-shadow: 2px 2px 2px #16181d;
   word-wrap: break-word; }
 
-.reveal h1 {
+.reveal h1, .reveal .h1 {
   font-size: 2em; }
 
-.reveal h2 {
+.reveal h2, .reveal .h2 {
   font-size: 1.5em; }
 
-.reveal h3 {
+.reveal h3, .reveal .h3 {
   font-size: 1.55em; }
 
-.reveal h4 {
+.reveal h4, .reveal .h4 {
   font-size: 1em; }
 
 .reveal h1 {
