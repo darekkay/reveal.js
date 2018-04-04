@@ -1596,6 +1596,9 @@ body {
 .no-border {
   border: none !important; }
 
+.border {
+  border: 1px solid !important; }
+
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
