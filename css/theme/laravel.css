@@ -279,6 +279,27 @@ body {
 .reveal.debug #schedule {
   display: block; }
 
+.reveal .red {
+  color: red; }
+
+.reveal .green {
+  color: green; }
+
+.reveal .orange {
+  color: #f76707; }
+
+.reveal .font-1 {
+  font-size: 25px; }
+
+.reveal .font-2 {
+  font-size: 30px; }
+
+.reveal .font-3 {
+  font-size: 35px; }
+
+.reveal .font-4 {
+  font-size: 40px; }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
