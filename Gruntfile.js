@@ -63,6 +63,7 @@ module.exports = function(grunt) {
         files: [
           {src: ['js/*.min.js'], dest: 'build/', expand: true},
           {src: ['css/reveal.min.css'], dest: 'build/', expand: true},
+					{src: ['css/print/pdf.css'], dest: 'build/', expand: true},
           {src: ['css/theme/*.min.css'], dest: 'build/', expand: true},
           {
             src: ['plugin/highlight/*', 'plugin/notes/*', 'plugin/markdown/*',  'plugin/schedule/*'],
