@@ -54,16 +54,16 @@ body {
   text-shadow: none;
   word-wrap: break-word; }
 
-.reveal h1 {
+.reveal h1, .reveal .h1 {
   font-size: 2.5em; }
 
-.reveal h2 {
+.reveal h2, .reveal .h2 {
   font-size: 1.6em; }
 
-.reveal h3 {
+.reveal h3, .reveal .h3 {
   font-size: 1.3em; }
 
-.reveal h4 {
+.reveal h4, .reveal .h4 {
   font-size: 1em; }
 
 .reveal h1 {
@@ -136,6 +136,9 @@ body {
 .reveal blockquote p:last-child {
   display: inline-block; }
 
+.reveal mark {
+  background-color: inherit; }
+
 .reveal q {
   font-style: italic; }
 
@@ -174,7 +177,7 @@ body {
 .reveal table td {
   text-align: left;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid; }
+  border: 1px solid #222; }
 
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
@@ -271,3 +274,47 @@ body {
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+/*********************************************
+ * UTILITIES
+ *********************************************/
+.reveal .chunk {
+  position: absolute;
+  background-color: #fff; }
+
+.reveal .schedule,
+.reveal #schedule {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: red; }
+
+.reveal.debug .schedule,
+.reveal.debug #schedule {
+  display: block; }
+
+.reveal .red {
+  color: red; }
+
+.reveal .green {
+  color: green; }
+
+.reveal .orange {
+  color: #f76707; }
+
+.reveal .font-1 {
+  font-size: 25px; }
+
+.reveal .font-2 {
+  font-size: 30px; }
+
+.reveal .font-3 {
+  font-size: 35px; }
+
+.reveal .font-4 {
+  font-size: 40px; }
