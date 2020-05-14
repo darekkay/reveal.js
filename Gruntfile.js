@@ -64,7 +64,10 @@ module.exports = function(grunt) {
           {src: ['js/*.min.js'], dest: 'build/', expand: true},
           {src: ['css/reveal.min.css'], dest: 'build/', expand: true},
           {src: ['css/theme/*.min.css'], dest: 'build/', expand: true},
-          {src: ['plugin/highlight/*.js', 'plugin/notes/*.js'], dest: 'build/', expand: true},
+          {
+            src: ['plugin/highlight/*', 'plugin/notes/*', 'plugin/markdown/*',  'plugin/schedule/*'],
+            dest: 'build/', expand: true
+          },
         ],
       },
     },
