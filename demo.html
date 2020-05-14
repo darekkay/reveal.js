@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/dk-dark.min.css" id="theme">
@@ -322,7 +322,6 @@ function linkify( selector ) {
 
     </div>
 
-    <script src="js/head.min.js"></script>
     <script src="js/reveal.min.js"></script>
 
     <script>
@@ -333,13 +332,13 @@ function linkify( selector ) {
         progress: true,
         history: true,
         center: true,
+        hash: true,
         controlsTutorial: false,
 
         transition: 'none', // none/fade/slide/convex/concave/zoom
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-          { src: 'js/classList.min.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/notes/notes.js', async: true }
         ]
