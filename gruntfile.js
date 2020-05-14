@@ -74,7 +74,7 @@ module.exports = grunt => {
 					{src: ['css/print/pdf.css'], dest: 'build/', expand: true},
           {src: ['css/theme/*.min.css'], dest: 'build/', expand: true},
           {
-            src: ['plugin/highlight/*', 'plugin/notes/*', 'plugin/markdown/*',  'plugin/schedule/*'],
+            src: ['plugin/highlight/*', 'plugin/notes/*', 'plugin/markdown/*',  'plugin/schedule/*', 'plugin/theme-toggle/*'],
             dest: 'build/', expand: true
           },
         ],
