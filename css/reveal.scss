@@ -1789,7 +1789,11 @@ $notesWidthPercent: 25%;
 .no-border { border: none !important; }
 .border { border: 1px solid !important; }
 .d-flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.align-center { align-items: center !important; }
 .monospace { font-family: Consolas, monospace !important; }
+
+.icon { width: 1.6rem; height: 1.6rem; }
 
 /*********************************************
  * SYNTAX HIGHLIGHTING

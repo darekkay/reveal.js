@@ -1482,8 +1482,20 @@ body {
   display: -ms-flexbox !important;
   display: flex !important; }
 
+.flex-col {
+  -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+
+.align-center {
+  -ms-flex-align: center !important;
+      align-items: center !important; }
+
 .monospace {
   font-family: Consolas, monospace !important; }
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem; }
 
 /*********************************************
  * SYNTAX HIGHLIGHTING
