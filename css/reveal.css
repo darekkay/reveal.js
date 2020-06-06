@@ -1514,7 +1514,7 @@ pre::before {
   width: 100%; }
 
 pre code {
-  background-color: #282c34;
+  background-color: #1c1c1c;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   max-height: 600px;
@@ -1539,7 +1539,7 @@ pre code {
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #e04164; }
+  color: #e35374; }
 
 /* Tomorrow Orange */
 .hljs-number,
@@ -1555,7 +1555,7 @@ pre code {
 
 /* Tomorrow Yellow */
 .hljs-attribute {
-  color: #e7c547; }
+  color: #f0c674; }
 
 /* Tomorrow Green */
 .hljs-string,
@@ -1569,7 +1569,7 @@ pre code {
 .hljs-title,
 .hljs-section,
 .hljs-tag {
-  color: #7aa6da; }
+  color: #9cdcfe; }
 
 /* Tomorrow Purple */
 .hljs-keyword,

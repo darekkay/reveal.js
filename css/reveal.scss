@@ -1819,7 +1819,7 @@ pre {
 	}
 
 	code {
-		background-color: lighten($coal, 8%);
+		background-color: #1c1c1c;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 		max-height: 600px;
@@ -1848,7 +1848,7 @@ pre {
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-	color: #e04164;
+	color: #e35374;
 }
 
 /* Tomorrow Orange */
@@ -1866,7 +1866,7 @@ pre {
 
 /* Tomorrow Yellow */
 .hljs-attribute {
-	color: #e7c547;
+	color: #f0c674;
 }
 
 /* Tomorrow Green */
@@ -1882,7 +1882,7 @@ pre {
 .hljs-title,
 .hljs-section,
 .hljs-tag {
-	color: #7aa6da;
+	color: #9cdcfe;
 }
 
 /* Tomorrow Purple */
