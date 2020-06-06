@@ -1460,6 +1460,9 @@ body {
 .float-left {
   float: left !important; }
 
+.clear-both {
+  clear: both !important; }
+
 .text-center {
   text-align: center !important; }
 
