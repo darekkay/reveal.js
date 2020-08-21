@@ -394,16 +394,16 @@ body {
 .bg-highlight {
   background: #222; }
 
-.highlight-1, mark {
+.reveal .highlight-1, mark {
   color: #a7e22e; }
 
-.highlight-2 {
+.reveal .highlight-2 {
   color: #ee83ff; }
 
-.highlight-3 {
+.reveal .highlight-3 {
   color: #face00; }
 
-.highlight-4 {
+.reveal .highlight-4 {
   color: #29e1cb; }
 
 .reveal .red {

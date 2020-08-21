@@ -26,10 +26,10 @@ $linkColorHover: lighten( $linkColor, 20% );
 
 .bg-highlight { background: #222; }
 
-.highlight-1, mark { color: #a7e22e; } // grade: 20
-.highlight-2 { color: $violet-warm-vivid-30; }
-.highlight-3 { color: $yellow-vivid-20; }
-.highlight-4 { color: $mint-cool-vivid-20; }
+.reveal .highlight-1, mark { color: #a7e22e; } // grade: 20
+.reveal .highlight-2 { color: $violet-warm-vivid-30; }
+.reveal .highlight-3 { color: $yellow-vivid-20; }
+.reveal .highlight-4 { color: $mint-cool-vivid-20; }
 
 .reveal .red { color: $violet-warm-vivid-30; }
 .reveal .green { color: #a7e22e; }
