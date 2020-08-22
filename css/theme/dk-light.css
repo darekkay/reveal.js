@@ -263,10 +263,6 @@ body {
 .reveal table td[align="right"] {
   text-align: right; }
 
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-  border-bottom: none; }
-
 .reveal sup {
   vertical-align: super;
   font-size: smaller; }
